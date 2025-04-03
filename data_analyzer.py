@@ -28,7 +28,6 @@ class DataAnalyzer():
         ax.axis('off')
 
         # Create the table
-        row_labels = ['', 'count', 'std dev', 'min', '25%', '50%', '75%', 'max']
         table = ax.table(cellText=values, colLabels=['', 'Count', 'Std Dev', 'Min', '25%', '50%', '75%', 'Max'], loc='center', fontsize=20)
         table.auto_set_font_size(False)
         table.set_fontsize(10)
