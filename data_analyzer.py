@@ -4,11 +4,11 @@ import seaborn as sns
 class DataAnalyzer():
     def __init__(self, data):
         self.data = data
-        self.headers = self.data.columns.tolist()
 
     def build_descriptive_data_table(self):
         values = []
-        for col in self.headers:
+        headers = self.data.columns.tolist()
+        for col in headers:
             row = []
             desc = self.data[col].describe().round(2)
 

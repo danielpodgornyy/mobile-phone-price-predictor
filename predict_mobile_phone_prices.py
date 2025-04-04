@@ -33,6 +33,8 @@ def predict_mobile_phone_prices():
                 dp.predict_prices(True)
             case '6':
                 return
+            case _:
+                print("Incorrect input")
 
 if __name__ == '__main__':
     predict_mobile_phone_prices()
